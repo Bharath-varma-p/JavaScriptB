@@ -1,21 +1,19 @@
-let currentReslult = 0;
-
-currentReslult = currentReslult + 10
-
+const defaultResult = 0;     
+let currentResult = defaultResult;
 
 
-function add(num1, num2){
-    const result = num1 + num2;
-    alert(`The result is ${result}`)
-
-
+function add() {
+    currentResult = currentResult + userInput1.value;
+    outputResult(currentResult,' ');
 }
 
-add(userInput,11)
+addBtn.addEventListener('click',add);
 
-outputResult(currentReslult, 'Tend');
-console.log('hello bharath')
-console.log(`The result for you bharath ${currentReslult} `)
+
+
+// outputResult(currentReslult, 'Tend');
+// console.log('hello bharath')
+// console.log(`The result for you bharath ${currentReslult} `)
 
 
 // functions sep 7th
