@@ -3,8 +3,11 @@ let currentResult = defaultResult;
 
 
 function add() {
-    currentResult = currentResult + userInput1.value;
-    outputResult(currentResult,' ');
+    // currentResult = currentResult + +userInput1.value; //works as converting string into int
+    oldResult = currentResult
+    currentResult = currentResult + parseInt(userInput1.value);
+    discription = `The sum of ${oldResult} + ${userInput1.value} = ${currentResult}`
+    outputResult(currentResult,discription);
 }
 
 addBtn.addEventListener('click',add);
